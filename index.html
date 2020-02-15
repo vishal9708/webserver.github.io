@@ -1,31 +1,56 @@
 <html>
+<link rel="stylesheet" type="text/css" href="newwebserver.css">
       <head>
              <title>MultiThread WebServer</title>
-      </head>
 
+      </head>
 <center>
 
 <body BGCOLOR="#000000" TEXT="#80c0c0" LINK="#ff8080" VLINK="#ff0000" ALINK="#a05050">
- <div ALIGN="center">
+   <div ALIGN="center">
  <table BGCOLOR="#000080" BORDER=3 BORDERCOLOR="#0000ff"><tr>
    <td><h1><font FACE="courier" SIZE=6><font SIZE=7>W</font>ELCOME TO Multithread WebServer!</font></h1></td>
        </tr></table>
        </div>
       <br><br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi there! This Server is dedicated to multiple clients in one go ..!.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi there! This Server is dedicated to multiple clients in one go ..! and indistinguishable from single-threaded servers from the client's point of view.</p>
 
  <table BGCOLOR="#000080"><tr>
       <td WIDTH=50>&nbsp;</td>
     <td><font COLOR="#00ff00">Brought to you by:
-         <font FACE="'comic sans ms', fantasy" COLOR="#ffff00">&quot;Under Operating System Lab Project : &quot; </font>  <u>Vishal Soni</u></font></td>
+         <font FACE="'comic sans ms', fantasy" COLOR="#ffff00">&quot;Under Operating System Lab Project : &quot; </font> 
+          </font></td>
        </tr>
       </table>
- 
+      </center>
+      <div class="index">
+     
+      <table BGCOLOR="#000080"><tr>
+      <td WIDTH=50>&nbsp;
+     <font FACE="'comic sans ms', fantasy" COLOR="#ffff00">CONTRIBUTORS: </font> 
+    </td>
+        </tr>
+      </table>
+      <ol>
+        <li>Vishal Soni 2018IMT-106</li>
+        <li>Pathange Balaji Rao 2018IMT-064</li>
+        <li>Narendra Chaudhary 2018IMT-056</li>
+        <li>Utkarsh Gaur 2018IMT-102</li>
+        <li>Ajay Prakash Pipliwal 2018IMT-011</li>
+        <li>Rahul Doley 2018IMT-076</li>
+      </ol>
+      <p>A Process is basically a program, which is being executed by the processor with the process environment, which includes but not limited to Address Space, Page Table state, state of some processor registers and environment variables. A program here is just bytes, stored somewhere in memory.
+      </p>
+<p>
+A Thread is an entity that exists within a process that represents a flow of instructions with its own Stack. So, many threads may exist within a process, sharing memory address space, but each having its own stack.
+<p>
+A single-core computer, we will assume there is only one instruction that can be executed at a time, although that may not be true So, generally, to run many threads at a time a technique called concurrency is used. That means that every quantile of processor time one instruction from a thread is executed and a thread is given some quantiles to work and do its job, after which its switched to another thread, which is also given some time to work and so on. This strategy is called preemption (each thread sort of pushes the other away from the processor and takes control over it for some time). Another strategy for context switching is called cooperative (when a programmer puts some marks in code, which say something like “I can now safely be switched, since I’ve finished all intermediate calculations”).
+</p>
+An OS entity called scheduler is in charge of all the things that regard context switching. Preemption is basically implemented by assigning each thread a priority label and increasing/decreasing it (in reality, it’s more complicated: the priority is added up with time spent in queue and so on)
+<p>
+Context switching. Process context is the state of some vital processor registers, stack state and page table, which is unique for each process. When scheduler chooses the next process to be executed, processor has to back up current registers state, load previously stored state for next process, switch Page Table for next process and load some additional service data. All these operations consume time, which is why, for example, you cannot have thousands of processes running super efficiently (but it depends on the number of processors and execution cores). Switching threads is similar to process switching, but here you just have to change stack.</p></div>
+<center>
  <div><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font SIZE=6 COLOR="#ffffff">W</font>hen you are done looking through these masterpieces, I encourage you to visit again!! </b></div>
-
 </center>
-
-
-
       </body>
       </html> 
